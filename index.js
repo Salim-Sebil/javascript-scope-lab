@@ -4,24 +4,27 @@
 
 const burgers = ["Hamburger", "Cheeseburger"];
 
-let featuredDrink = "Strawberry Milkshake";
+let featuredDrink = "Strawberry Milkshake"
 
 //add burger function
 
 function addBurger(){
     const newBurger = "Flatburger";
-    burgers.push("newBurger");
+    burgers.push(newBurger)
 }
+addBurger()
 
 //block scope
 
-if(true){
-    const anotherNewBurger = "Maple Bacon Burger";
-    burgers.push("anotherNewBurger")
+if(1 < 3){
+    const anotherNewBurger = 'Maple Bacon Burger';
+    burgers.push(anotherNewBurger)
 }
 
 //change featured drink function
-function chageFeaturedDrink(featuredDrink){
-    let featuredDrink = "The JavaShake";
+function changeFeaturedDrink(){
+    let featuredDrink = 'The JavaShake'
 }
+changeFeaturedDrink()
 
+console.log(burgers);
